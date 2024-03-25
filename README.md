@@ -1,4 +1,4 @@
-# Taming the Machine Learning Menagerie: Introducing Keepsake
+# Keepsake: Taming the Chaos of Machine Learning Experiments
 
 Ever trained a machine learning model and felt like you were wrestling a tangled mess of code, datasets, and hyperparameters? You're not alone.  Machine learning projects are exciting journeys of discovery, but keeping track of everything can feel like herding cats.  This is where Keepsake comes in as your friendly neighborhood version control system for machine learning.
 
@@ -95,4 +95,22 @@ Keepsake provides a powerful CLI that allows you to interact with your experimen
 <img width="622" alt="Screenshot 2024-03-25 at 6 40 58 AM" src="https://github.com/dhwanisanmukhani/I3_blog/assets/28778091/9587852a-d33d-4a73-a694-bd2c10e8a0b9">
 </p>
 
+This glimpse only scratches the surface of Keepsake's capabilities. The CLI and python api offers a rich set of commands for advanced tasks, including but not limited to identifying the best experiment based on primary metrics, visualizing experiment comparisons with scatter plots, and much more. I encourage you to delve deeper into Keepsake's documentation to unlock its full potential and streamline your machine learning journey. https://keepsake.ai/docs/reference/python
 
+### Strengths of Keepsake
+
+Keepsake offers several advantages that streamline the machine learning experimentation process:
+- Simplified Setup: Compared to other MLOps tools, Keepsake boasts a straightforward installation process using pip, the Python package manager. This eliminates complex configuration steps, allowing you to quickly integrate Keepsake into your existing workflow.
+- Effortless Experiment Tracking: Keepsake seamlessly captures all aspects of your experiment, including code, data paths, hyperparameters, and even the training script itself. This eliminates the need for manual logging or meticulous record-keeping.
+- Effortless Version Control: Similar to Git for code, Keepsake acts as a version control system for your ML experiments. You can create checkpoints throughout the training process, essentially saving snapshots of your experiment at different stages. This empowers you to effortlessly roll back to previous versions if needed, just like reverting to a specific commit in Git. This is particularly valuable for debugging, iterating on hyperparameters, or revisiting successful model configurations.
+- Enhanced Reproducibility: By meticulously recording all experiment details, Keepsake ensures superior reproducibility. You can easily recreate past experiments with the exact same settings, facilitating comparisons and validation of results. This becomes crucial for sharing your work with others or replicating successful models in production environments.
+
+### Limitations of Keepsake
+
+While Keepsake offers significant benefits, it's essential to consider some potential limitations:
+
+- Limited Integration: Currently, Keepsake primarily focuses on Python environments. Integration with other programming languages used in machine learning (e.g., R) is limited.
+- Evolving Ecosystem: As a relatively new tool, Keepsake's ecosystem of integrations and community support is still under development. While it offers core functionalities, it might not yet have the extensive feature set of more established MLOps platforms.
+- Limited Visualization: Keepsake currently offers limited built-in visualization capabilities for exploring experiment results. You might need to integrate external tools for in-depth analysis and data visualization.
+
+In conclusion, Keepsake acts as your secret weapon for taming the chaos of machine learning experiments.  With its effortless setup, intuitive tracking, and seamless version control, Keepsake empowers you to experiment fearlessly, iterate effectively, and ensure the reproducibility of your findings. So, the next time you embark on an ML adventure, don't forget to pack Keepsake in your toolbox – it might just be the key to unlocking groundbreaking discoveries.
