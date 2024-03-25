@@ -1,4 +1,5 @@
 # Keepsake: Taming the Chaos of Machine Learning Experiments
+_Dhwani Sanmukhani_
 
 Ever trained a machine learning model and felt like you were wrestling a tangled mess of code, datasets, and hyperparameters? You're not alone.  Machine learning projects are exciting journeys of discovery, but keeping track of everything can feel like herding cats.  This is where Keepsake comes in as your friendly neighborhood version control system for machine learning.
 
