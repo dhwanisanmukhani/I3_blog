@@ -23,7 +23,7 @@ This will download and install the Keepsake library for you.
 #### Train the Model with Keepsake Integration:
 The core functionality of your experiment will remain within your Python script. Here's a breakdown of how Keepsake integrates with your training process:
 
-1. Initialize Keepsake Experiment (experiment.init()):
+1) Initialize Keepsake Experiment (experiment.init()):
 
 This line marks the beginning of your Keepsake experiment. It tells Keepsake to start tracking everything related to this specific run of your model training script.
 
@@ -38,7 +38,7 @@ experiment = keepsake.init(
 * *path*: This argument specifies the location where Keepsake will store the experiment data. By default, it uses the current working directory.
 * *params*: This dictionary stores the hyperparameters used for your model training, like learning rate and number of epochs. Keepsake will record these values for future reference.
 
-2. Load Data and Train Model:
+2) Load Data and Train Model:
 
 Load your movie rating dataset and train your chosen model (e.g., SVD in this case) as usual. Keepsake will silently track these details in the background.
 
@@ -48,7 +48,7 @@ algo = SVD(lr_all=learning_rate, n_epochs=num_epochs)
 cv_results = cross_validate(algo, dataset, measures=['RMSE', 'MAE'], cv=5, verbose=True)
 ```
 
-3. Checkpoint Experiment (experiment.checkpoint()):
+3) Checkpoint Experiment (experiment.checkpoint()):
 
 Once the model is trained, Keepsake lets you create a checkpoint. This essentially saves a snapshot of the entire experiment, including the model file path and performance metrics:
 
@@ -66,7 +66,7 @@ experiment.checkpoint(
 * *metrics*: This dictionary stores the performance metrics calculated during training (e.g., RMSE, MAE). Keepsake will track these for future evaluation.
 * *primary_metric*: This argument allows you to specify the primary metric to optimize. Keepsake can track multiple metrics, but this helps identify the most important one.
 
-4. Stop Experiment (experiment.stop()):
+4) Stop Experiment (experiment.stop()):
 
 This line signals the end of your Keepsake experiment. It's particularly important when working with Jupyter Notebooks, as Keepsake experiments running in scripts will eventually time out automatically. Calling experiment.stop() ensures proper cleanup and finalizes the experiment record.
 
