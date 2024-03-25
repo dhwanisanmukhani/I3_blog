@@ -80,7 +80,7 @@ Keepsake provides a powerful CLI that allows you to interact with your experimen
 </p>
 
 
-`(keepsake show <experiment_id>)`: This command displays detailed information about the experiment, including all the checkpoints under that experiment:
+`keepsake show <experiment_id>`: This command displays detailed information about the experiment, including all the checkpoints under that experiment:
 
 <p align="center">
 <img width="555" alt="Command for showing all information about an experiment" src="https://github.com/dhwanisanmukhani/I3_blog/assets/28778091/676d3ea8-2f8e-4435-a9f9-766897bedb3a">
